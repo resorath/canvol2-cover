@@ -2,19 +2,15 @@ body {
   width: 100%;
   height: 100%;
   font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #fff;
-  background-color: #000; }
+  color: #000;
+  background-color: #DFDFDF;
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
 
 html {
   width: 100%;
   height: 100%; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -32,15 +28,14 @@ p {
     font-size: 20px;
     line-height: 1.6; } }
 a {
-  color: #42dca3;
+  color: #D23988;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #1d9b6c; }
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #D23988; }
 
 .light {
   font-weight: 400; }
@@ -50,7 +45,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: #000; }
+  background-color: #8BC53F; }
 
 .navbar-custom .navbar-brand {
   font-weight: 700; }
@@ -107,7 +102,7 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: #000; } }
+    background: #8BC53F; } }
 .intro {
   display: table;
   width: 100%;
@@ -115,7 +110,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/Calgary-Drop-In-yycflood.jpg) no-repeat bottom center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -131,6 +126,11 @@ a:focus {
 
 .intro .intro-body .intro-text {
   font-size: 18px; }
+
+.intro-body {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 @media (min-width: 768px) {
   .intro {
@@ -201,32 +201,23 @@ a:focus {
 .content-section {
   padding-top: 100px; }
 
-.download-section {
+.charity-action-section {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background: url(../img/calgary-pano-dark.jpg) no-repeat center center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
 
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px; }
-
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px; }
 
-  .download-section {
-    padding: 100px 0; }
-
-  #map {
-    height: 400px;
-    margin-top: 250px; } }
+  .charity-action-section {
+    padding: 100px 0; } }
 .btn {
   border-radius: 0;
   text-transform: uppercase;
@@ -237,16 +228,16 @@ a:focus {
   transition: all .3s ease-in-out; }
 
 .btn-default {
-  border: 1px solid #42dca3;
-  color: #42dca3;
+  border: 1px solid #D23988;
+  color: #D23988;
   background-color: transparent; }
 
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42dca3;
+  border: 1px solid #D23988;
   outline: 0;
   color: #000;
-  background-color: #42dca3; }
+  background-color: #D23988; }
 
 ul.banner-social-buttons {
   margin-top: 0; }
@@ -284,7 +275,18 @@ img::selection {
 img::-moz-selection {
   background: 0 0; }
 
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+#calltoaction {
+  margin-top: 80px; }
+
+.cta-inner {
+  width: 90%;
+  margin: 0 auto; }
+
+@media (max-width: 767px) {
+  .cta-inner {
+    width: 100%;
+    margin-top: 80px; } }
+.hugeicon {
+  font-size: 6.0em; }
 
 /*# sourceMappingURL=canvol.css.map */

@@ -298,6 +298,10 @@ img::-moz-selection {
 
 @media (max-width: 767px) {
   .howcanvolworks {
-    margin-top: 100px; } }
+    text-align: center;
+    margin-top: 100px; }
+
+  .hcw-image-block img {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=canvol.css.map */

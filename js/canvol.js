@@ -28,3 +28,24 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function() {
+    hcaSetPosition();
+
+});
+
+$(window).resize(function() {
+    hcaSetPosition();
+
+});
+
+function hcaSetPosition()
+{
+    if($(document).width() < 768)
+    {
+        console.log($("#hca-secondrow.hcw-image-block"));
+        $("#hca-secondrow .hcw-image-block").remove().insertAfter($("#hca-secondrow .hcw-text-block"));
+    } else {
+        $("#hca-secondrow .hcw-image-block").remove().insertBefore($("#hca-secondrow .hcw-text-block"));
+    }  
+}

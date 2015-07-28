@@ -9,7 +9,6 @@ body {
     color: #000;
     background-color: $bodybackgroundcolour;
 
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
 html {
@@ -389,5 +388,18 @@ img::-moz-selection {
     {
         width: 100%;
         margin-top: 10px;
+    }
+}
+
+.howcanvolworks
+{
+    text-align: left;
+    margin-top: 200px;
+}
+
+@media(max-width:767px){
+    .howcanvolworks
+    {
+        margin-top: 100px;
     }
 }

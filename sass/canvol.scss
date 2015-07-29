@@ -163,7 +163,7 @@ a:hover, a:focus {
 
 .intro-body
 {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -338,7 +338,7 @@ footer {
 footer p {
     margin: 0;
 }
-
+/*
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
@@ -349,7 +349,7 @@ footer p {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
-}
+}*/
 
 img::selection {
     background: 0 0;

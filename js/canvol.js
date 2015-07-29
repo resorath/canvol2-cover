@@ -42,7 +42,7 @@ $(window).resize(function() {
 function hcaSetPosition()
 {
     if($(document).width() < 768)
-    {}
+    {
         $(".hcw-responsive-swap .hcw-image-block").each(function() {
             $ia = $(this).parent().find(".hcw-text-block")
             $(this).remove().insertAfter($ia);

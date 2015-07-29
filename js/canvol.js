@@ -42,10 +42,17 @@ $(window).resize(function() {
 function hcaSetPosition()
 {
     if($(document).width() < 768)
-    {
-        console.log($("#hca-secondrow.hcw-image-block"));
-        $("#hca-secondrow .hcw-image-block").remove().insertAfter($("#hca-secondrow .hcw-text-block"));
+    {}
+        $(".hcw-responsive-swap .hcw-image-block").each(function() {
+            $ia = $(this).parent().find(".hcw-text-block")
+            $(this).remove().insertAfter($ia);
+        });
     } else {
-        $("#hca-secondrow .hcw-image-block").remove().insertBefore($("#hca-secondrow .hcw-text-block"));
+
+         $(".hcw-responsive-swap .hcw-image-block").each(function() {
+            $ia = $(this).parent().find(".hcw-text-block")
+            $(this).remove().insertBefore($ia);
+        });
+        //$("#hca-secondrow .hcw-image-block").remove().insertBefore($("#hca-secondrow .hcw-text-block"));
     }  
 }

@@ -58,14 +58,20 @@ function hcaSetPosition()
 }
 
 $('#request-invite').click(function(){
-    var mail = $('signupemail').val();
+    var mail = $('#signupemail').val();
 
     if(isValidEmailAddress(mail))
-    {
+    {  
+        $('#request-invite').val('Requesting...');
         $.get("dynamic/invite.php?mail=" + mail, function (data)
             {
-                
+                // lets discard the data for now since its not useful to the user
+                $('#request-invite').val('Requested, Thanks!').removeClass('btn-default').addClass('btn-success');
             });
+    }
+    else
+    {
+        alert("Please enter a valid e-mail address!");
     }
 
 

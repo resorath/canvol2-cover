@@ -46,6 +46,18 @@ a:hover, a:focus {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #8BC53F; }
 
+.navbar-static {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #8BC53F;
+  font-weight: 700;
+  font-size: 16px; }
+
+.navbar-static a {
+  color: #fff; }
+
 .navbar-custom .navbar-brand {
   font-weight: 700; }
 
@@ -270,6 +282,20 @@ footer p {
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
 }*/
+.glyphicon.spinning {
+  animation: spin 1s infinite linear;
+  -webkit-animation: spin2 1s infinite linear; }
+
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg); }
+  to {
+    transform: scale(1) rotate(360deg); } }
+@-webkit-keyframes spin2 {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
 img::selection {
   background: 0 0; }
 
@@ -297,6 +323,14 @@ img::-moz-selection {
 .howcanvolworks {
   text-align: left;
   margin-top: 200px; }
+
+.hcw-image-block img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto; }
+
+#standalonepage {
+  margin-top: 40px; }
 
 @media (max-width: 767px) {
   .howcanvolworks {
